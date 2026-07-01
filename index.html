@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI University - PrologAI</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: #0d0d0d;
+      color: #e8e0cc;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      padding: 3rem 2rem;
+      text-align: center;
+      border-bottom: 2px solid #c9a84c;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: #f0d080;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.5rem;
+    }
+
+    header p.subtitle {
+      font-size: 1.1rem;
+      color: #a0b8d0;
+      font-style: italic;
+    }
+
+    nav {
+      background: #111;
+      padding: 0.8rem 2rem;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+
+    nav a {
+      color: #c9a84c;
+      text-decoration: none;
+      margin: 0 1.2rem;
+      font-size: 0.95rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    nav a:hover { color: #f0d080; }
+
+    .hero {
+      max-width: 860px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 1.9rem;
+      color: #c9a84c;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: #c8c0b0;
+      margin-bottom: 1rem;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+
+    .badge-row img { height: 28px; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+    }
+
+    .card {
+      background: #1a1a2e;
+      border: 1px solid #2a3a5e;
+      border-radius: 8px;
+      padding: 1.6rem;
+    }
+
+    .card h3 {
+      color: #f0d080;
+      font-size: 1.15rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .card p {
+      color: #a8a098;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #c9a84c;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .card a:hover { text-decoration: underline; }
+
+    .section-title {
+      text-align: center;
+      color: #c9a84c;
+      font-size: 1.4rem;
+      margin: 2.5rem 0 1rem;
+      letter-spacing: 0.05em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #555;
+      font-size: 0.85rem;
+      border-top: 1px solid #222;
+      margin-top: 3rem;
+    }
+
+    footer a { color: #888; text-decoration: none; }
+    footer a:hover { color: #c9a84c; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>AI University</h1>
+  <p class="subtitle">PrologAI &mdash; Glass-Box Reasoning for Artificial Intelligence</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#papers">Papers</a>
+  <a href="https://github.com/ai-university-aiu" target="_blank">GitHub</a>
+</nav>
+
+<div class="hero" id="about">
+  <h2>Pure Prolog. Glass-Box AI. No Black Boxes.</h2>
+  <p>
+    PrologAI is a symbolic reasoning engine built entirely in SWI-Prolog.
+    Every decision can be read, explained, and audited as a named rule.
+    No neural weights. No opaque gradient descent. Just logic.
+  </p>
+  <p>
+    PrologAI achieved a perfect score on ARC-AGI-1 (400/400 = 100%) using
+    named glass-box rules &mdash; and continues climbing ARC-AGI-2.
+  </p>
+  <div class="badge-row">
+    <img src="https://img.shields.io/badge/ARC--AGI--1-400%2F400%20%3D%20100%25-yellow?style=for-the-badge" alt="ARC-AGI-1: 400/400">
+    <img src="https://img.shields.io/badge/ARC--AGI--2-39%2F120%20%3D%2032.50%25-orange?style=for-the-badge" alt="ARC-AGI-2: 39/120">
+    <img src="https://img.shields.io/badge/language-SWI--Prolog-blue?style=for-the-badge" alt="SWI-Prolog">
+    <img src="https://img.shields.io/badge/reasoning%20types-48%2F48-goldenrod?style=for-the-badge" alt="48 Reasoning Types">
+  </div>
+</div>
+
+<h2 class="section-title" id="projects">Projects</h2>
+
+<div class="cards">
+  <div class="card">
+    <h3>PrologAI</h3>
+    <p>
+      The core symbolic AI engine. 275+ functional layers, 48 reasoning types,
+      ARC-AGI-1 perfect score. Built entirely in pure Prolog with no machine learning.
+    </p>
+    <a href="https://github.com/ai-university-aiu/PrologAI" target="_blank">View on GitHub &rarr;</a>
+  </div>
+  <div class="card">
+    <h3>Mentova</h3>
+    <p>
+      The demonstration and benchmark platform for PrologAI. Hosts the ARC-AGI-2
+      climb, papers, accomplishments, and the Certified PrologAI Engineer textbook.
+    </p>
+    <a href="https://github.com/ai-university-aiu/Mentova" target="_blank">View on GitHub &rarr;</a>
+  </div>
+  <div class="card">
+    <h3>ARC-AGI Benchmarks</h3>
+    <p>
+      ARC-AGI-1: 400/400 = 100% solved using named glass-box Prolog rules.
+      ARC-AGI-2: currently climbing &mdash; 39/120 tasks solved and rising.
+    </p>
+    <a href="https://github.com/ai-university-aiu/Mentova/blob/main/papers/Climbing_ARC-AGI-2.txt" target="_blank">Climbing Log &rarr;</a>
+  </div>
+</div>
+
+<h2 class="section-title" id="papers">Contact</h2>
+
+<div class="hero">
+  <p>
+    Creator: D. R. Dison, Founder of AIU, Creator and Owner of PrologAI and Mentova.
+  </p>
+  <p>
+    ORCID: 0009-0001-9246-5758 &bull;
+    <a href="https://linkedin.com/in/d-r-dison/" target="_blank" style="color:#c9a84c;">LinkedIn</a> &bull;
+    <a href="mailto:ai.university.aiu@gmail.com" style="color:#c9a84c;">ai.university.aiu@gmail.com</a>
+  </p>
+</div>
+
+<footer>
+  <p>
+    &copy; 2026 AI University &bull; D. R. Dison &bull;
+    <a href="https://github.com/ai-university-aiu" target="_blank">github.com/ai-university-aiu</a>
+  </p>
+</footer>
+
+</body>
+</html>
