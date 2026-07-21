@@ -80,6 +80,28 @@
 
     .badge-row img { height: 28px; }
 
+    .about {
+      max-width: 860px;
+      margin: 1.5rem auto 2.5rem;
+      padding: 0 2rem;
+    }
+
+    .about p {
+      font-size: 1.02rem;
+      line-height: 1.85;
+      color: #c8c0b0;
+      margin-bottom: 1.15rem;
+      text-align: left;
+    }
+
+    .about .footnote {
+      display: block;
+      margin-top: 0.4rem;
+      font-size: 0.82rem;
+      line-height: 1.7;
+      color: #8a8478;
+    }
+
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -144,6 +166,7 @@
       font-size: 1.4rem;
       margin: 2.5rem 0 1rem;
       letter-spacing: 0.05em;
+      text-transform: uppercase;
     }
 
     footer {
@@ -168,31 +191,50 @@
 <nav>
   <a href="#about">About</a>
   <a href="#projects">Projects</a>
-  <a href="#papers">Papers</a>
+  <a href="#books">Books</a>
   <a href="https://github.com/ai-university-aiu" target="_blank">GitHub</a>
 </nav>
 
-<div class="hero" id="about">
-  <h2>Pure Prolog. Glass-Box AI. No Black Boxes.</h2>
+<h2 class="section-title" id="about">About</h2>
+
+<div class="about">
   <p>
-    PrologAI is a symbolic reasoning engine built entirely in SWI-Prolog.
+    D. R. Dison is the founder of Artificial Intelligence University (AIU), an
+    independent research organization, and the creator and owner of Causalontology,
+    PrologAI, Mentova, and Konnectome.
   </p>
   <p>
-    Every decision can be read, explained, and audited as a named rule.
+    Causalontology is the world's first synthesis of a reified, process-first causal
+    calculus (its verbs), a continuant backbone of persisting entities (its nouns), and
+    a realizable hinge that binds the two - one foundational, glass-box ontology,
+    grounded in embodied, interventional learning.
   </p>
   <p>
-    No neural weights. No opaque gradient descent. Just logic.
+    PrologAI is one of the world's first complete glass-box cognitive substrates for
+    building synthetic minds, with no neural network, no Large Language Model (LLM) and
+    no black-box concerns; a new programming language written entirely in pure
+    *SWI-Prolog - a base, a foundation, a substrate for anyone to build their own custom
+    Glass-box Synthetic Mind (GSM), where every reasoning step is a named, inspectable
+    rule and every answer comes with a justification tree you can read, uniting 48 named
+    modes of reasoning in a single, fully inspectable architecture.
+    <span class="footnote">(* Sociaal-Wetenschappelijke Informatica (Dutch for "Social Science Informatics"))</span>
   </p>
   <p>
-    PrologAI achieved a perfect score on ARC-AGI-1 (400/400 = 100%) using
-    named glass-box rules &mdash; and continues climbing ARC-AGI-2.
+    Mentova is the world's first Glass-box Synthetic Mind (GSM)**, written in PrologAI,
+    to score 400/400 = 100% on the public training set of the Abstract Reasoning Corpus
+    for Artificial General Intelligence Version 1 (ARC-AGI-1) and 120/120 = 100% on the
+    public data set of ARC-AGI-2. Every answer comes with a readable justification tree,
+    no black box and no Large Language Model (LLM).
+    <span class="footnote">(** Glass-box means every step can be read and audited, the opposite of a hidden black box. A Synthetic Mind means a machine built to reason, remember, and explain, rather than a statistical model that predicts text - a system that knows what it knows, knows how it knows it, and can show you the proof. Mentova is the world's first Glass-Box Synthetic Mind that only says what it can actually explain.)</span>
   </p>
-  <div class="badge-row">
-    <img src="https://img.shields.io/badge/ARC--AGI--1-400%2F400%20%3D%20100%25-yellow?style=for-the-badge" alt="ARC-AGI-1: 400/400">
-    <img src="https://img.shields.io/badge/ARC--AGI--2-39%2F120%20%3D%2032.50%25-orange?style=for-the-badge" alt="ARC-AGI-2: 39/120">
-    <img src="https://img.shields.io/badge/language-SWI--Prolog-maroon?style=for-the-badge" alt="SWI-Prolog">
-    <img src="https://img.shields.io/badge/reasoning%20types-48%2F48-darkred?style=for-the-badge" alt="48 Reasoning Types">
-  </div>
+  <p>
+    Konnectome is the world's first Glass-box Synthetic Mind (GSM) to be based on the
+    human nervous system. (Mentova was based on abstract cognitive architectures, not
+    neuroscience.) Written in PrologAI and Causalontology 3.0.0 compliant, Konnectome is
+    built from human brain neuroscience and the book, "Nature's Cognitive Architecture:
+    From Neuroscience to Artificial General Intelligence (AGI)." Konnectome has not been
+    rated against ARC-AGI.
+  </p>
 </div>
 
 <h2 class="section-title" id="projects">Projects</h2>
@@ -218,10 +260,15 @@
     <h3>ARC-AGI Benchmarks</h3>
     <p>
       ARC-AGI-1: 400/400 = 100% solved using named glass-box Prolog rules.
-      ARC-AGI-2: currently climbing &mdash; 39/120 tasks solved and rising.
+      ARC-AGI-2: 120/120 = 100% solved on the public data set.
     </p>
     <a href="https://github.com/ai-university-aiu/Mentova/blob/main/papers/Climbing_ARC-AGI-1.txt" target="_blank">Climbing Log &rarr;</a>
   </div>
+</div>
+
+<h2 class="section-title" id="books">Books</h2>
+
+<div class="cards">
   <div class="card">
     <h3>Certified 4ourth Generation Artificial Intelligence Engineer</h3>
     <a href="C4GAIE_2026-07-01.pdf" target="_blank" rel="noopener" class="project-image-link" title="Open the C4GAIE PDF in your browser">
@@ -229,20 +276,21 @@
     </a>
     <p>
       The Certified 4ourth Generation Artificial Intelligence Engineer (C4GAIE)
-      by D. R. Dison. Click the cover to open the full PDF in a new browser tab.
+      by D. R. Dison (546 pages). Click the cover to open the full PDF in a new browser tab.
     </p>
     <a href="C4GAIE_2026-07-01.pdf" target="_blank" rel="noopener">Open the PDF &rarr;</a>
   </div>
 </div>
 
-<h2 class="section-title" id="papers">Contact</h2>
+<h2 class="section-title" id="contact">Contact</h2>
 
 <div class="hero">
   <p>
-    Creator: D. R. Dison, Founder of AIU, Creator and Owner of PrologAI and Mentova.
+    D. R. Dison is the founder of Artificial Intelligence University (AIU), and the
+    creator and owner of Causalontology, PrologAI, Mentova, and Konnectome.
   </p>
   <p>
-    ORCID: 0009-0001-9246-5758 &bull;
+    <a href="https://orcid.org/0009-0001-9246-5758" target="_blank" style="color:#c9a84c;">ORCID: 0009-0001-9246-5758</a> &bull;
     <a href="https://linkedin.com/in/d-r-dison/" target="_blank" style="color:#c9a84c;">LinkedIn</a> &bull;
     <a href="mailto:ai.university.aiu@gmail.com" style="color:#c9a84c;">ai.university.aiu@gmail.com</a>
   </p>
