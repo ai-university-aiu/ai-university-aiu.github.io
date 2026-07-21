@@ -395,7 +395,7 @@
   </p>
   <p>
     <a href="https://linkedin.com/in/d-r-dison/" target="_blank"><img src="Linkedin-Logo-95x30.png" alt="LinkedIn" style="height:30px;width:auto;vertical-align:middle;"></a> &bull;
-    <a href="mailto:ai.university.aiu@gmail.com"><img src="email-40x40.png" alt="Email" style="height:30px;width:auto;vertical-align:middle;"></a>
+    <a id="email-link" href="#" title="Email"><img src="email-40x40.png" alt="Email" style="height:30px;width:auto;vertical-align:middle;"></a>
     <span style="color:#c9a84c;">(ai.university.aiu AT gmail.com)</span>
   </p>
 </div>
@@ -459,6 +459,13 @@
           statusEl.textContent = 'Sorry, something went wrong. Please try again.';
         });
     });
+  })();
+
+  (function () {
+    var link = document.getElementById('email-link');
+    if (!link) return;
+    // Address is base64-encoded so the plaintext is not in the page source for spam bots to scrape.
+    link.setAttribute('href', 'mailto:' + atob('YWkudW5pdmVyc2l0eS5haXVAZ21haWwuY29t'));
   })();
 </script>
 
