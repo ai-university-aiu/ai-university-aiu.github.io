@@ -118,6 +118,26 @@
 
     .card a:hover { text-decoration: underline; }
 
+    /* Clickable, auto-resizing project image (opens the PDF) */
+    .project-image-link {
+      display: block;
+      width: 100%;
+      margin: 0.4rem 0 0.9rem;
+    }
+
+    .project-image {
+      display: block;
+      width: 100%;      /* image always matches the card's inner width */
+      height: auto;     /* keeps the original shape (no stretching)   */
+      border-radius: 6px;
+      border: 1px solid #2a3a5e;
+    }
+
+    .project-image-link:hover .project-image {
+      opacity: 0.92;
+      border-color: #c9a84c;
+    }
+
     .section-title {
       text-align: center;
       color: #c9a84c;
@@ -201,6 +221,17 @@
       ARC-AGI-2: currently climbing &mdash; 39/120 tasks solved and rising.
     </p>
     <a href="https://github.com/ai-university-aiu/Mentova/blob/main/papers/Climbing_ARC-AGI-1.txt" target="_blank">Climbing Log &rarr;</a>
+  </div>
+  <div class="card">
+    <h3>Certified 4ourth Generation Artificial Intelligence Engineer</h3>
+    <a href="C4GAIE_2026-07-01.pdf" target="_blank" rel="noopener" class="project-image-link" title="Open the C4GAIE PDF in your browser">
+      <img src="C4GAIE_Cover_7x10.png" alt="Certified 4ourth Generation Artificial Intelligence Engineer (C4GAIE) cover - click to open the PDF" class="project-image">
+    </a>
+    <p>
+      The Certified 4ourth Generation Artificial Intelligence Engineer (C4GAIE)
+      by D. R. Dison. Click the cover to open the full PDF in a new browser tab.
+    </p>
+    <a href="C4GAIE_2026-07-01.pdf" target="_blank" rel="noopener">Open the PDF &rarr;</a>
   </div>
 </div>
 
