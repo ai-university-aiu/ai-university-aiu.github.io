@@ -95,6 +95,27 @@
       text-align: left;
     }
 
+    .about .book-list {
+      list-style: none;
+      margin: 0 0 1.15rem;
+      padding: 0;
+    }
+
+    .about .book-list li {
+      font-size: 1.02rem;
+      line-height: 1.85;
+      color: #c8c0b0;
+      padding-left: 1.3rem;
+      position: relative;
+    }
+
+    .about .book-list li::before {
+      content: "\2022";
+      color: #c9a84c;
+      position: absolute;
+      left: 0;
+    }
+
     .about .footnote {
       display: block;
       margin-top: 0.4rem;
@@ -269,14 +290,17 @@
 <div class="about">
   <p>
     D. R. Dison is the founder of Artificial Intelligence University (AIU); the creator
-    and owner of Causalontology, PrologAI, Mentova, and Konnectome; and the author of
-    <em>Certified 4ourth Generation Artificial Intelligence Engineer</em> (546 pages),
-    <em>Nature's Cognitive Architecture</em> (270 pages), <em>AGI for Everyone</em>
-    (525 pages), <em>The Roadmap to AGI and ASI</em> (464 pages),
-    <em>Causalontology: AGI's Missing Link</em> (212 pages),
-    <em>Causalontology: THE SPEC</em> (256 pages), and
-    <em>DIAFINA: Fixing What Is Broken With English</em> (165 pages).
+    and owner of Causalontology, PrologAI, Mentova, and Konnectome; and the author of:
   </p>
+  <ul class="book-list">
+    <li><em>Certified 4ourth Generation Artificial Intelligence Engineer</em> (546 pages)</li>
+    <li><em>Nature's Cognitive Architecture</em> (270 pages)</li>
+    <li><em>AGI for Everyone</em> (525 pages)</li>
+    <li><em>The Roadmap to AGI and ASI</em> (464 pages)</li>
+    <li><em>Causalontology: AGI's Missing Link</em> (212 pages)</li>
+    <li><em>Causalontology: THE SPEC</em> (256 pages)</li>
+    <li><em>DIAFINA: Fixing What Is Broken With English</em> (165 pages)</li>
+  </ul>
   <p>
     Causalontology is the world's first synthesis of a reified, process-first causal
     calculus (its verbs), a continuant backbone of persisting entities (its nouns), and
